@@ -26,13 +26,13 @@
 .sidebarItem{
     display: grid;
     grid-template: 1fr/1fr 2fr;
-    gap: 10px;
+    
     
 }
 
 .sidebarImg{
     fill: white;
-    height: 30px;
+    height: 20px;
     width: auto;
     margin-left: 30px;
 }
@@ -40,7 +40,9 @@
 
 
 .sidebarText{
-    padding-top: 10px;
+    padding-top: 1px;
+    font-size: 16px;
+    
 }
 
 .logo{
@@ -64,11 +66,18 @@
 .naviTop{
     grid-row: 2/3;
     grid-column: 1/2;
+    display: grid;
+    grid-template: repeat(8,1fr)/1fr;
+    gap: 5px;
+    
 }
 
 .naviBottom{
     grid-row: 3/4;
     grid-column: 1/2;
+    display: grid;
+    grid-template: repeat(5,1fr)/1fr;
+    gap: 5px;
 }
 
 .rightBox{
@@ -93,12 +102,56 @@
 .search{
     grid-row: 1/2;
     grid-column: 1/2;
+    display: grid;
+    grid-template: 1fr/1fr 10fr;
+    margin-top: 10px;
+}
 
+.searchBar{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 0px;
+    height: 20px;
+    width: 500px;
+
+    background-color: #e2e8f0;
+    border-style: hidden;
+    border-radius: 15px;
+    
+}
+
+.searchIcon{
+    height: 25px;
+    width: auto;
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
 .profile{
     grid-row: 1/2;
     grid-column: 2/3;
+
+    display: grid;
+    grid-template: 1fr/1fr 1fr 2fr;
+    margin-top: 10px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+
+.notifIcon{
+height: 20px;
+width: auto;
+margin-top: 5px;
+}
+
+.profileIcon{
+    height: 30px;
+    width: auto;
+}
+
+.profileName{
+margin-top: 5px;
+font-weight: 700;
 }
 
 .greeting{
